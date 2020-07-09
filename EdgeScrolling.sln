@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdgeScrolling", "EdgeScrolling.csproj", "{84187A56-C9E7-4EFE-BBD1-4951ED52C37A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84187A56-C9E7-4EFE-BBD1-4951ED52C37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84187A56-C9E7-4EFE-BBD1-4951ED52C37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84187A56-C9E7-4EFE-BBD1-4951ED52C37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84187A56-C9E7-4EFE-BBD1-4951ED52C37A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26E4FA15-1332-4192-82EC-C47BB9167D7F}
+	EndGlobalSection
+EndGlobal
