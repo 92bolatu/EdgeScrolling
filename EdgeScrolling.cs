@@ -25,8 +25,6 @@ namespace EdgeScrolling {
 
         private static int pressed = 0;
 
-
-
         [HarmonyPatch(typeof(CameraController))]
         [HarmonyPatch("OnPrefabInit")]
         public static class CameraController_OnPrefabInit_Patch {
@@ -39,13 +37,6 @@ namespace EdgeScrolling {
         [HarmonyPatch("NormalCamUpdate")]
         public class NormalCamUpdate {
             public static void Prefix(CameraController __instance) {
-                if (enabled) {
-                    var m = KInputManager.GetMousePos();
-                    Traverse.Create(__instance).Field("panLeft").SetValue(m.x < edgeSize);
-                    Traverse.Create(__instance).Field("panRight").SetValue(m.x > (Screen.width - edgeSize));
-                    Traverse.Create(__instance).Field("panUp").SetValue(m.y > (Screen.height - edgeSize));
-                    Traverse.Create(__instance).Field("panDown").SetValue(m.y < edgeSize);
-                }
                 if (enabled) {
 
                     var m = KInputManager.GetMousePos();
